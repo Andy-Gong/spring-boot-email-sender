@@ -1,0 +1,6 @@
+/Users/gongxiaochuan/projcet/git-workspace-zuora/sping-boot-email-sender/src/main/java/email/sender/controller/SendEamilController.java
+/Users/gongxiaochuan/projcet/git-workspace-zuora/sping-boot-email-sender/src/main/java/email/sender/mail/EmailService.java
+/Users/gongxiaochuan/projcet/git-workspace-zuora/sping-boot-email-sender/src/main/java/email/sender/mail/EmailSender.java
+/Users/gongxiaochuan/projcet/git-workspace-zuora/sping-boot-email-sender/src/main/java/email/sender/config/MailSenderConfig.java
+/Users/gongxiaochuan/projcet/git-workspace-zuora/sping-boot-email-sender/src/main/java/email/sender/App.java
+/Users/gongxiaochuan/projcet/git-workspace-zuora/sping-boot-email-sender/src/main/java/email/sender/controller/vo/EmailSendRequest.java
