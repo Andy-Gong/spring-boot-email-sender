@@ -7,7 +7,7 @@
 ## Once app is started, sending email via api
    ```
    curl -X POST \
-  http://localhost:9010/send \
+  http://localhost:8080/send \
   -F to=xiaochuan.gong@zuora.com \
   -F 'subject=test send email' \
   -F 'body=Hi, Guys, this is testing to send email via SMTP service'
