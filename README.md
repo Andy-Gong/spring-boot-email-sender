@@ -3,7 +3,8 @@
 ## git clone git@github.com:Andy-Gong/spring-boot-email-sender.git
 ## mvn clean install
 ## update mail.username and mail.password to your email account in application.properties
-## Rest API to send email.
+## Start application
+## Once app is started, sending email via api
    ```
    curl -X POST \
   http://localhost:9010/send \
