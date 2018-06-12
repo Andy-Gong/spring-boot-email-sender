@@ -1,7 +1,14 @@
 # spring-boot-email-sender
+This project provides function to send email via SMTP service.
 
-## git clone git@github.com:Andy-Gong/spring-boot-email-sender.git
-## mvn clean install
+## clone project
+```
+git clone git@github.com:Andy-Gong/spring-boot-email-sender.git
+```
+## build project
+```
+mvn clean install
+```
 ## update mail.username and mail.password to your email account in application.properties
    ```
    mail.host=smtp.gmail.com
@@ -12,8 +19,8 @@
    mail.smtp-starttls-enable=true
    mail.socketFactory-class=javax.net.ssl.SSLSocketFactory
    ```
-## Start application
-## Once app is started, sending email via api
+## run application
+## once app is started, you can send email via api
    ```
    curl -X POST \
   http://localhost:8080/send \
