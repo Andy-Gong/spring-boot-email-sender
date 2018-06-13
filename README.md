@@ -26,11 +26,13 @@ java -jar email-sender-0.0.1-SNAPSHOT.jar
 Endpoint: http://localhost:8080/send, 
 HTTPMETHOD: POST
 Body:
+
 | Field     | Type    | Description |
 | --------|---------|-------|
 | to  | String   | The email address you want so send to.  |
 | subject | String | The subject of email.   |
 | body | String | The content of email.   |
+
 Example:
    ```
    curl -X POST \
