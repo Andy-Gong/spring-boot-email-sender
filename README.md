@@ -9,12 +9,18 @@ git clone git@github.com:Andy-Gong/spring-boot-email-sender.git
 ```
 mvn clean install
 ```
+## run applicaiton
+```
+cd target/
+
+java -jar email-sender-0.0.1-SNAPSHOT.jar
+```
 ## update mail.username and mail.password to your email account in application.properties
    ```
    mail.host=smtp.gmail.com
    mail.port=587
-   mail.username=username // replace here with your username
-   mail.password=password // replace here with your password
+   mail.username=username // replace it with your username
+   mail.password=password // replace it with your password
    mail.smtp-auth=true
    mail.smtp-starttls-enable=true
    mail.socketFactory-class=javax.net.ssl.SSLSocketFactory
