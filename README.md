@@ -24,7 +24,9 @@ java -jar email-sender-0.0.1-SNAPSHOT.jar
 ```
 ## API
 Endpoint: http://localhost:8080/send, 
+
 HTTPMETHOD: POST
+
 Body:
 
 | Field     | Type    | Description |
