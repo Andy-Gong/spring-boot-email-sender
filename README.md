@@ -16,7 +16,7 @@ https://github.com/Andy-Gong/spring-boot-email-sender.git
 ```
 mvn clean install
 ```
-### run applicaiton
+### start applicaiton
 ```
 cd target/
 
@@ -35,11 +35,14 @@ Body:
 | subject | String | The subject of email.   |
 | body | String | The content of email.   |
 
+## Quickstart
+After application starts, you can call the api as below, then you will receive the email.
+
 Example:
    ```
    curl -X POST \
   http://localhost:8080/send \
-  -F to=xiaochuan.gong@zuora.com \
+  -F to=xxxxx@gmail.com \
   -F 'subject=test send email' \
   -F 'body=Hi, Guys, this is testing to send email via SMTP service'
    ```
