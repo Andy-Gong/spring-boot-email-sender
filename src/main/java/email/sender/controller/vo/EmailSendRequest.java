@@ -1,5 +1,7 @@
 package email.sender.controller.vo;
 
+import org.springframework.util.StringUtils;
+
 public class EmailSendRequest {
     private String to;
     private String subject;
@@ -27,5 +29,13 @@ public class EmailSendRequest {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    @Override public String toString() {
+        StringBuilder sb = new StringBuilder("EmailSendRequest: ");
+        sb.append("to=").append(this.to).append("; ");
+        sb.append("subject=").append(this.subject).append("; ");
+        sb.append("body=").append(this.body);
+        return sb.toString();
     }
 }

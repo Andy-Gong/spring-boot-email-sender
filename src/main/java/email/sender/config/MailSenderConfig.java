@@ -9,18 +9,11 @@ import org.springframework.stereotype.Component;
 public class MailSenderConfig {
     private String host;
     private int port;
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     private String username;
     private String password;
     private boolean smtpAuth;
+    private String socketFactoryClass;
+    private boolean smtpStarttlsEnable;
 
     public boolean isSmtpAuth() {
         return smtpAuth;
@@ -38,8 +31,6 @@ public class MailSenderConfig {
         this.smtpStarttlsEnable = smtpStarttlsEnable;
     }
 
-    private boolean smtpStarttlsEnable;
-
     public String getSocketFactoryClass() {
         return socketFactoryClass;
     }
@@ -47,8 +38,6 @@ public class MailSenderConfig {
     public void setSocketFactoryClass(String socketFactoryClass) {
         this.socketFactoryClass = socketFactoryClass;
     }
-
-    private String socketFactoryClass;
 
     public String getHost() {
         return host;
@@ -74,4 +63,23 @@ public class MailSenderConfig {
         this.password = password;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    @Override public String toString() {
+        StringBuffer sb = new StringBuffer("MailSenderConfig: ");
+        sb.append("host=" + this.host).append("; ");
+        sb.append("port=" + this.port).append("; ");
+        sb.append("username=" + this.username).append("; ");
+        sb.append("password=" + this.password).append("; ");
+        sb.append("smtpAuth=" + this.smtpAuth).append("; ");
+        sb.append("socketFactoryClass=" + this.socketFactoryClass).append("; ");
+        sb.append("smtpStarttlsEnable=" + this.smtpStarttlsEnable);
+        return sb.toString();
+    }
 }
