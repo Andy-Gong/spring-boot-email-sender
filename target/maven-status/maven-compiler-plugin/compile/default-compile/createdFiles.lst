@@ -1,6 +1,0 @@
-email/sender/mail/EmailService.class
-email/sender/config/MailSenderConfig.class
-email/sender/App.class
-email/sender/mail/EmailSender.class
-email/sender/controller/vo/EmailSendRequest.class
-email/sender/controller/SendEamilController.class
