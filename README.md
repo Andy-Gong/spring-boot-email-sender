@@ -8,8 +8,8 @@ https://github.com/Andy-Gong/spring-boot-email-sender.git
 ### update mail.username and mail.password to your email account in application.properties
    ```
    ... ...
-   mail.username=username // replace it with your username
-   mail.password=password // replace it with your password
+   mail.username=username // replace it with your google username
+   mail.password=password // replace it with your google password
    ... ...
    ```
 ### build project
@@ -49,11 +49,13 @@ Example:
 ## Troubleshoot
 Application logs are in /tmp/application.log file.
 
-API request log:
+### API request log:
 ```
 2018-06-23 17:41:31 [http-nio-8080-exec-2] INFO  e.s.controller.SendEamilController - Receive email send request: EmailSendRequest: to=xiaochuan.gong@zuora.com; subject=test send email; body=Hi, Guys, this is testing to send email via SMTP service
 ```
-Email send log:
+### Email send log:
 ```
 2018-06-23 17:41:40 [http-nio-8080-exec-2] INFO  email.sender.mail.EmailService - ->>>> Send email successfully, and mail message is SimpleMailMessage: from=null; replyTo=null; to=xiaochuan.gong@zuora.com; cc=; bcc=; sentDate=null; subject=test send email; text=Hi, Guys, this is testing to send email via SMTP service
 ```
+### Solve error javax.mail.AuthenticationFailedException:
+When the exception happens, it maybe that your google email account can't turn on access, see here: https://support.google.com/accounts/answer/6010255?hl=en
